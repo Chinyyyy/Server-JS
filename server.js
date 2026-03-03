@@ -134,6 +134,7 @@ app.post("/login", (req, res) => {
     res.status(401).json({ mensaje: "Credenciales incorrectas" });
 });
 
+
 /**
  * @swagger
  * /alumnos:
@@ -251,8 +252,8 @@ app.post("/alumnos", verificarToken, (req, res) => {
  *       200:
  *         description: Mensaje de prueba
  */
-app.get("/hola", verificarToken, (req, res) => {
-    res.json({ mensaje: "Holis" });
+app.get("/hola", (req, res) => {
+    res.json({ mensaje: "Holiiiissss, esta es mi API :)" });
 });
 
 
