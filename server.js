@@ -27,7 +27,7 @@ const options = {
         },
         servers: [
             {
-                url: "http://localhost:3000"
+                url: "https://server-js-fzdc.onrender.com"
             }
         ],
         components: {
@@ -264,6 +264,3 @@ app.listen(PORT, () => {
 });
 
 
-app.listen(3000, "0.0.0.0", () => {
-    console.log("Servidor corriendo en red local en puerto 3000");
-});
