@@ -6,7 +6,9 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerJsdoc = require("swagger-jsdoc");
 const PORT = process.env.PORT || "3000"
 const SECRET = process.env.JWT_SECRET || "clave_super_secreta";
+const cors = require('cors');
 
+app.use(cors());
 const app = express();
 app.use(cors());
 app.use(express.json());
